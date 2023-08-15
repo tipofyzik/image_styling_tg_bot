@@ -15,6 +15,6 @@ My telegram bot: @image_styling_tg_bot
 
 ## 3. Docker and deploy
 
-## 4. Usage specifics
+## 4. Usage restrictions
 
 ## 5. Results
