@@ -1,6 +1,6 @@
 # image_styling_tg_bot
 
-This is an english version of [my final project](https://github.com/tipofyzik/ImageStyling_tgbot) that I've made on the [Deep Learning School course by MIPT](https://dls.samcs.ru/en/dls). The original was written in russian, so you can translate it with google.
+This is an english version of [my final project](https://github.com/tipofyzik/ImageStyling_tgbot) that I've made on the [Deep Learning School course by MIPT](https://dls.samcs.ru/en/dls) this june. The original was written in russian, so you can translate it with google.
 
 Brief explanation of my project's goal: First of all, it was neccessary to create a telegram bot that can transfer image style from one image to another. The bot should be based on Generative Adversarial Network (GAN). An additional goal was to deploy the bot to the server. I've done both of them!
 
