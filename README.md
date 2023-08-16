@@ -29,9 +29,12 @@ There is an example: I uploaded the cat photo as the original image and the star
 ![image](https://github.com/tipofyzik/image_styling_tg_bot/assets/84290230/40c644fa-febd-42f7-9d7c-ba3768a0e398)
 
 **About fixing errors in the code**:  
-
+Entire code is the same except for the tensor_load_rgbimage(...) function. You can find it in "MSGNet.py" file. The problem iccured when you tried to resize your image, specifically, Image.ANTIALIAS parameter from the Pillow library caused the error. It deprecated and was removed on July 1, 2023.
+![image](https://github.com/tipofyzik/image_styling_tg_bot/assets/84290230/e7456cb9-fd16-4c0f-a534-ccbb6a81c5ba)
+For this reason, Image.LANCZOS parameter is used the results of which are scarcely inferior to the previous method.
 
 ## 2. About creating and using a bot
+
 
 ## 3. Docker and deploy
 
