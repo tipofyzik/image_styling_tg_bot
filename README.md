@@ -9,11 +9,11 @@ My telegram bot: @image_styling_tg_bot
 
 ## About the repository usage before we start
   1. Folder "Notebook": it contains notebook and neccessary photos for it.This is solely required for showcasing the operation of the chosen GAN.
-  2. To run your own bot you need:
-     **•** Download the "tgbot" folder, the "app.py", and the "API.txt" files.
-     **•** [Create your own bot](https://sendpulse.com/knowledge-base/chatbot/telegram/create-telegram-chatbot#create-bot) (read the 1st chapter).
-     **•** Copy an API that was given by @BotFather and put it in **API.txt**
-     **•** Install all required libraries (see "requirements.txt")
+  2. To run your own bot you need:  
+     **•** Download the "tgbot" folder, the "app.py", and the "API.txt" files.  
+     **•** [Create your own bot](https://sendpulse.com/knowledge-base/chatbot/telegram/create-telegram-chatbot#create-bot) (read the 1st chapter).  
+     **•** Copy an API that was given by @BotFather and put it in **API.txt**  
+     **•** Install all required libraries (see "requirements.txt")  
      **•** Run "app.py"
   3. If you wanna run your bot through docker you also need to download the dockerfile and follow the instruction from the "Docker and deploy" section
 
