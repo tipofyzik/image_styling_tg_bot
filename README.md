@@ -8,7 +8,7 @@ For not wasting the resources of the server the bot was stopped. You can run you
 My telegram bot: @image_styling_tg_bot
 
 ## About the repository usage before we start
-  1. Folder "Notebook": it contains notebook and neccessary photos for it.This is solely required for showcasing the operation of the chosen GAN.
+  1. Folder "Notebook": it contains notebook and neccessary photos for it.This is solely required for showcasing the operation of the chosen GAN. This folder isn't required for the functioning of the Telegram bot.
   2. To run your own bot you need:  
      **•** Download the "tgbot" folder, the "app.py", and the "API.txt" files  
      **•** [Create your own bot](https://sendpulse.com/knowledge-base/chatbot/telegram/create-telegram-chatbot#create-bot) (read the 1st chapter)  
