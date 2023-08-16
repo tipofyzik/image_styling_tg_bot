@@ -4,7 +4,7 @@ This is an english version of [my final project](https://github.com/tipofyzik/Im
 
 Brief explanation of my project's goal: First of all, it was neccessary to create a telegram bot that can transfer image style from one image to another. The bot should be based on Generative Adversarial Network (GAN). An additional goal was to deploy the bot to the server. I've done both of them!
 
-For not wasting the resources of the server the bot was stopped. You can run your own by downloading repository and following the deploy server instruction (see below).  
+For not wasting the resources of the server the bot was stopped. You can run your own by downloading repository and following the deploy server instruction (see "Docker and deploy" chapter).  
 My telegram bot: @image_styling_tg_bot
 
 ## About the repository usage before we start
