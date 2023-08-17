@@ -59,7 +59,7 @@ The first line creates new name for our docker image; this is necessary for uplo
 
 The last part - run on server. All we need 
 5. Open [docker playground](https://www.docker.com/play-with-docker/) and choose the "Lab Environment".
-![image](https://github.com/tipofyzik/image_styling_tg_bot/assets/84290230/cba3d20b-e3e6-4d22-abe3-7d68bf67b93d)
+![image](https://github.com/tipofyzik/image_styling_tg_bot/assets/84290230/cba3d20b-e3e6-4d22-abe3-7d68bf67b93d)  
 6. Log in (credentials from docker.com) and click on "add new instance".  
 7. Finally, in appeared console, we write:  
 **•** docker run -it <dockerhub_username>/<your_image_name>  
