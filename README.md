@@ -42,8 +42,8 @@ The bot was created by @BotFather. You can read more about its creating [here](h
 
 ## 4. Usage restrictions
 All limitations are related to small amounts of free memory on the server. So, it's more recommendations to using a bot:  
-1. The input images are resized to 512 * 512 pixels. Despite the fact that it reduces the quality of the resulting image, it also increases the speed of processing input images and obtaining the result. You can change this parameter int the **transform_image()** function in the **tgbot.py** file.
-2. As the resources of the server are poor, I wouldn't recommend to upload large-size photos. It should be max 5MBytes so as not to kill the server.
+1. The input images are resized to 512 * 512 pixels. Despite the fact that it reduces the quality of the resulting image, it also increases the speed of processing input images and obtaining the result. You can change this parameter int the **transform_image()** function in the **tgbot.py** file.  
+2. As the resources of the server are poor, I wouldn't recommend to upload large-size photos. It should be max 5MBytes so as not to kill the server.  
 3. 
 
 ## 5. Results
