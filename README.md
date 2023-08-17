@@ -39,7 +39,7 @@ For this reason, Image.LANCZOS parameter is used the results of which are scarce
 
 
 
-## 2. About creating and using a bot
+## 2. About using a bot
 The bot was created by @BotFather. You can read more about its creating [here](https://sendpulse.com/knowledge-base/chatbot/telegram/create-telegram-chatbot#create-bot). Also I used [aiogram](https://docs.aiogram.dev/en/latest/) framework to write bot functionality. If you wanna see for other sources go to the last section. The work of the bot will be discussed further.
 
 
