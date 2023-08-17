@@ -39,12 +39,42 @@ The bot was created by @BotFather. You can read more about its creating [here](h
 
 
 ## 3. Docker and deploy
+Here we'll discuss how to create docker image, upload it on docker hub and deploy you telegram bot. That was completely new information for me, so I'll try to explain it as crearly as possible. If you know nothing about docker how ot was with me you can read the basics [here](https://en.wikipedia.org/wiki/Docker_(software)). 
+
+So what should we do to deploy our bot? Let's take a closer look:
+1. First of all, we should install docker desktop on pc. You can download it [here](https://www.docker.com/).  
+2. Next, it's necessary to write two files - one with the required libraries and the second directly with the dockerfile. First is a txt-file that's common named  "reqierements.txt" - you write here all libraries that are used. The second file is dockerfile which is a set of commands for building a docker image. An example, excepting for files in my repository, canbe seen, for an instance, [here](https://www.educative.io/answers/how-do-you-write-a-dockerfile).
+
+Since 3rd point the first two must be completed and the docker desktop app must be run.
+3. Open the console and go to the directory where the project is located. Here we just creating our docker image by set of command in console:  
+**•** docker build -t <your_image_name> <path_to_dockerfile>  
+**(OPTIONAL)** After the build is complete, you can test your image by running it with the following command:  
+**•** docker run <your_image_name>  
+4. Next, we want to upload our docker image on docker hub. Open the site, register there, next, open the console and write:  
+**•** docker login  
+After you logged in, we write these two commands:  
+**•** docker tag <your_image_name> <dockerhub_username>/<your_image_name>  
+**•** docker push <dockerhub_username>/<your_image_name>  
+The first line creates new name for our docker image; this is necessary for uploading it on docker hub. The second line uploads our image on the site.
+
+The last part - run on server. All we need 
+5. Open [docker playground](https://www.docker.com/play-with-docker/) and choose the "Lab Environment".
+![image](https://github.com/tipofyzik/image_styling_tg_bot/assets/84290230/cba3d20b-e3e6-4d22-abe3-7d68bf67b93d)
+6. Log in (credentials from docker.com) and click on "add new instance".  
+7. Finally, in appeared console, we write:  
+**•** docker run -it <dockerhub_username>/<your_image_name>  
+After this, your dicker image will be downloded on your server and will be run. That's all, you can use your bot!
+
+**Important note:**  
+
+
+
 
 ## 4. Usage restrictions
 All limitations are related to small amounts of free memory on the server. So, it's more recommendations to using a bot:  
 **•** The input images are resized to 512 * 512 pixels. Despite the fact that it reduces the quality of the resulting image, it also increases the speed of processing input images and obtaining the result. You can change this parameter int the **transform_image()** function in the **tgbot.py** file, but remember that it will extremely increase precessing time, so you should do it on your pc or on paid server.    
-**•** As the resources of the server are poor, I wouldn't recommend to upload large-size photos. It should be max 5MBytes so as not to kill the server.  
-**•** 
+**•** As the resources of the server are poor, I wouldn't recommend to upload large-size photos. It should be max 5MBytes so as not to kill the server.   
+**•** The docker playground server has only 4GB of memory and a limited 4-hour session, but that's enough to launch with our parameters.
 
 ## 5. Results
 Some good results recieved from the bot  
@@ -63,6 +93,7 @@ English sources:
 [6] About docker: https://en.wikipedia.org/wiki/Docker_(software)  
 [7] Docker official (for installation): https://www.docker.com/  
 [8] Docker in VSCode (to create dockerfile): https://code.visualstudio.com/docs/containers/overview  
-[9] Docker hub (to upload docker image): https://hub.docker.com/  
-[10] Docker playground (to deploy telegram bot): https://www.docker.com/play-with-docker/
+[9] Creating dockerfile: https://www.educative.io/answers/how-do-you-write-a-dockerfile  
+[10] Docker hub (to upload docker image): https://hub.docker.com/  
+[11] Docker playground (to deploy telegram bot): https://www.docker.com/play-with-docker/
 
