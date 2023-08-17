@@ -49,16 +49,16 @@ Some good results recieved from the bot
 
 ## 6. Sources
 Russian sources (you can use the google translate if you need):  
-[1] My original repository: https://github.com/tipofyzik/ImageStyling_tgbot
+[1] My original repository: https://github.com/tipofyzik/ImageStyling_tgbot  
 [2] Creating simple function for your bot: https://mastergroosha.github.io/aiogram-3-guide/ 
 
 English sources:  
-[3] About the MSG-Net: https://www.researchgate.net/figure/An-overview-of-MSG-Net-Multi-style-Generative-Network-The-transformation-network_fig1_315489372
-[4] MSG-Net implementation: https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer
-[5] Aiogram documentation: https://docs.aiogram.dev/en/latest/
-[6] About docker: https://en.wikipedia.org/wiki/Docker_(software)
-[7] Docker official (for installation): https://www.docker.com/
-[8] Docker in VSCode (to create dockerfile): https://code.visualstudio.com/docs/containers/overview
-[9] Docker hub (to upload docker image): https://hub.docker.com/
+[3] About the MSG-Net: https://www.researchgate.net/figure/An-overview-of-MSG-Net-Multi-style-Generative-Network-The-transformation-network_fig1_315489372  
+[4] MSG-Net implementation: https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer  
+[5] Aiogram documentation: https://docs.aiogram.dev/en/latest/  
+[6] About docker: https://en.wikipedia.org/wiki/Docker_(software)  
+[7] Docker official (for installation): https://www.docker.com/  
+[8] Docker in VSCode (to create dockerfile): https://code.visualstudio.com/docs/containers/overview  
+[9] Docker hub (to upload docker image): https://hub.docker.com/  
 [10] Docker playground (to deploy telegram bot): https://www.docker.com/play-with-docker/
 
