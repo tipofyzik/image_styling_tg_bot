@@ -42,7 +42,14 @@ For this reason, Image.LANCZOS parameter is used the results of which are scarce
 ## 2. About using a bot
 The bot was created by @BotFather. You can read more about its creating [here](https://sendpulse.com/knowledge-base/chatbot/telegram/create-telegram-chatbot#create-bot). Also I used [aiogram](https://docs.aiogram.dev/en/latest/) framework to write bot functionality. If you wanna see for other sources go to the last section. The work of the bot will be discussed further.
 
+Working principle is very simple: you upload 2 photos - the original and the style. The style from the last one will be applied to the first original, and then you will recieve the resulting image. 
 
+A couple of things about work of the bot:  
+**•** To get the result you do need to restart the bot every time. You just can choose image type and upload an image. Just remember that the bot will process only the recent image of each type, respectively.  
+**•** Bot has a "/test" command. It doesn't affect the work of the bot, but it demonstrates the quality of images with different values of the image_size parameter. You can also find these photos in the "tgbot/tests" directory.  
+
+Bot restrictions:
+**•** Bot asynchrony is not fully implemented. I made a simple separation of photos depends on which user uploaded it. As I had anticipated, I implemented the asynchronous functionality, but it appears to be functional only when the bot is running on a pc. If I run the bot on the server the asynchrony won't work. I'm not sure what the problem is yet, but I'll fix it in future updates. 
 
 ## 3. Docker and deploy
 Here we'll discuss how to create docker image, upload it on docker hub and deploy you telegram bot. That was completely new information for me, so I'll try to explain it as crearly as possible. If you know nothing about docker how ot was with me you can read the basics [here](https://en.wikipedia.org/wiki/Docker_(software)). 
