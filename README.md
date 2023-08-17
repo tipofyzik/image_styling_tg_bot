@@ -45,7 +45,7 @@ So what should we do to deploy our bot? Let's take a closer look:
 1. First of all, we should install docker desktop on pc. You can download it [here](https://www.docker.com/).  
 2. Next, it's necessary to write two files - one with the required libraries and the second directly with the dockerfile. First is a txt-file that's common named  "reqierements.txt" - you write here all libraries that are used. The second file is dockerfile which is a set of commands for building a docker image. An example, excepting for files in my repository, canbe seen, for an instance, [here](https://www.educative.io/answers/how-do-you-write-a-dockerfile).
 
-Since 3rd point the first two must be completed and the docker desktop app must be run.
+Since 3rd point the first two must be completed and the docker desktop app must be run.  
 3. Open the console and go to the directory where the project is located. Here we just creating our docker image by set of command in console:  
 **•** docker build -t <your_image_name> <path_to_dockerfile>  
 **(OPTIONAL)** After the build is complete, you can test your image by running it with the following command:  
