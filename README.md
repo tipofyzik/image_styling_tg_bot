@@ -34,7 +34,7 @@ Entire code is the same except for the tensor_load_rgbimage(...) function. You c
 For this reason, Image.LANCZOS parameter is used the results of which are scarcely inferior to the previous method.
 
 ## 2. About creating and using a bot
-The bot was created by @BotFather. You can read more about its creating [here](https://sendpulse.com/knowledge-base/chatbot/telegram/create-telegram-chatbot#create-bot). Also I used [aiogram](https://docs.aiogram.dev/en/latest/) framework to write bot functionality. See the last section for other sources, the work of the bot will be discussed further.
+The bot was created by @BotFather. You can read more about its creating [here](https://sendpulse.com/knowledge-base/chatbot/telegram/create-telegram-chatbot#create-bot). Also I used [aiogram](https://docs.aiogram.dev/en/latest/) framework to write bot functionality. If you wanna see for other sources go to the last section. The work of the bot will be discussed further.
 
 
 ## 3. Docker and deploy
