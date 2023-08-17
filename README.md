@@ -7,6 +7,8 @@ Brief explanation of my project's goal: First of all, it was necessary to create
 For not wasting the resources of the server the bot was stopped. You can run your own by downloading repository and following the deploy server instruction (see "Docker and deploy" section).  
 My telegram bot: @image_styling_tg_bot
 
+
+
 ## About the repository usage before we start
   1. Folder "Notebook": it contains notebook and necessary photos for it. This is solely required for showcasing the operation of the chosen GAN and is not necessary for the functioning of the Telegram bot.
   2. To run your own bot you need:  
@@ -16,6 +18,8 @@ My telegram bot: @image_styling_tg_bot
      **•** Install all required libraries (see "requirements.txt")  
      **•** Run "app.py"
   3. If you wanna run your bot through docker you also need to download the dockerfile and follow the instruction from the "Docker and deploy" section.
+
+
 
 ## 1. Bot neural network selection
   The MSG-Net was selected in the [implementation from zhanghang1989](https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer). Other networks like [CycleGan](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) or [Deep Photo Style Transfer](https://github.com/ray075hl/DeepPhotoStyle_pytorch) (DPST) were also considered when choosing a network. However, I stopped on the MSG-Net for the following reasons:    
@@ -32,6 +36,8 @@ There is an example: I uploaded the cat photo as the original image and the star
 Entire code is the same except for the tensor_load_rgbimage(...) function. You can find it in "MSGNet.py" file. The problem iccured when you tried to resize your image, specifically, Image.ANTIALIAS parameter from the Pillow library caused the error. It deprecated and was removed on July 1, 2023.
 ![image](https://github.com/tipofyzik/image_styling_tg_bot/assets/84290230/e7456cb9-fd16-4c0f-a534-ccbb6a81c5ba)
 For this reason, Image.LANCZOS parameter is used the results of which are scarcely inferior to the previous method.
+
+
 
 ## 2. About creating and using a bot
 The bot was created by @BotFather. You can read more about its creating [here](https://sendpulse.com/knowledge-base/chatbot/telegram/create-telegram-chatbot#create-bot). Also I used [aiogram](https://docs.aiogram.dev/en/latest/) framework to write bot functionality. If you wanna see for other sources go to the last section. The work of the bot will be discussed further.
@@ -66,7 +72,7 @@ The last part - run on server. All we need:
 After this, your dicker image will be downloded on your server and will be run. That's all, you can use your bot!
 
 **Important note:**  
-
+When writing a project's dependency file, I strongly recommend installing only the bare minimum required for the bot (and for any other project) to function. It will significantly decrease your docker image size,  thus requiring fewer server resources. For example, initially I installed all torch library and my size of my docker file was 7.5GB. After I installed only torch-CPU, the essentials required to run Python, and cleared all cache, the size has been reduced to 1GB.
 
 
 
@@ -76,10 +82,14 @@ All limitations are related to small amounts of free memory on the server. So, i
 **•** As the resources of the server are poor, I wouldn't recommend to upload large-size photos. It should be max 5MBytes so as not to kill the server.   
 **•** The docker playground server has only 4GB of memory and a limited 4-hour session, but that's enough to launch with our parameters.
 
+
+
 ## 5. Results
 Some good results recieved from the bot  
 ![image](https://github.com/tipofyzik/image_styling_tg_bot/assets/84290230/17b40370-fa9b-4a0c-8dd7-8f636398a6db)
 ![image](https://github.com/tipofyzik/image_styling_tg_bot/assets/84290230/96a238c2-134e-42d0-a496-10544f1c8046)
+
+
 
 ## 6. Sources
 Russian sources (you can use the google translate if you need):  
